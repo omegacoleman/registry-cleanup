@@ -1,0 +1,10 @@
+registry_url: http://10.0.75.1:7780
+repos:
+    - workzone
+    - test
+cleanup:
+    - "regexp:.*"
+except:
+    - "date:>=-3"
+    - "equal:latest"
+
