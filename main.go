@@ -58,7 +58,9 @@ func main() {
 
 	skipped := []string{}
 	for _, curr_repo := range curr_config.RepositoryArray {
-		curr_tags, err := curr_registry.ListImageTags("workzone")
+		log.Println("Working on repo " + curr_repo + " ...")
+
+		curr_tags, err := curr_registry.ListImageTags(curr_repo)
 		if err != nil {
 			log.Fatalf("error listing tags : %v", err)
 		}

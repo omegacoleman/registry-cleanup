@@ -1,4 +1,7 @@
 registry_url: http://10.0.75.1:7780
+auth:
+    username: admin
+    password: 123456
 repos:
     - workzone
     - test
